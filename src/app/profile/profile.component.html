@@ -1,0 +1,38 @@
+
+
+<!-- <pre *ngIf="user">
+  {{user | json}}
+</pre> -->
+
+  <div fxLayout="row" style="padding-top: 20px">
+      <div fxFlex="97" ><button (click)="goBack()" mat-raised-button color="primary" style="float:right"><mat-icon>keyboard_backspace</mat-icon>Back</button></div>        
+      </div>
+<div fxLayout="row wrap" fxLayoutGap="20" fxLayoutAlign="space-around start" style="padding-top: 42px;" >
+  
+  <div fxFlex="20">
+    <mat-card>
+        <img matCardImage [src]="user?.picture?.medium" >
+    </mat-card>
+  </div>
+  <div fxFlex="70">
+    <mat-card fxFlex="">
+        <mat-card-header>
+            <mat-card-title>User Details</mat-card-title>
+            <mat-card-subtitle>About User</mat-card-subtitle>
+        </mat-card-header>
+       
+        <mat-card-content>
+            <div fxLayout="row wrap" >
+                <div fxFlex="40">Name</div><div fxFlex="60">{{user?.name?.first}} {{user?.name?.last}}</div>
+                <div fxFlex="40">Gender</div><div fxFlex="60">{{user?.gender}}</div>
+                <div fxFlex="40">Email</div><div fxFlex="60">{{user?.email}}</div>
+                <div fxFlex="40">Phone</div><div fxFlex="60">{{user?.phone}}</div>
+                    
+                </div>
+        </mat-card-content>
+   
+    </mat-card>
+
+    </div>      
+ 
+</div>
