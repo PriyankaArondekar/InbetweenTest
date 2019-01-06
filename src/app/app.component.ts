@@ -33,10 +33,6 @@ export class AppComponent implements OnInit {
       }
     });
 
-    this.userService.getSchool().subscribe(res => {
-      console.log(res);
-    });
-
   }
 
   isScreenSmall(): boolean {
